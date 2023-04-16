@@ -1,0 +1,22 @@
+.mobile-wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-wrapper > * {
+  width: 100%;
+}

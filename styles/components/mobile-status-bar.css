@@ -1,0 +1,20 @@
+.mobile-status-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: var(--gap);
+  width: 100%;
+  border-bottom: var(--border);
+}
+
+.mobile-status-bar > * {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-status-bar > *:nth-child(2) {
+  justify-content: center;
+}
+
+.mobile-status-bar > *:last-child {
+  justify-content: end;
+}

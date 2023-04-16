@@ -1,0 +1,19 @@
+.mobile-nav {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: var(--gap);
+}
+
+.mobile-nav {
+  padding: var(--gap);
+  /* background-color: rgb(var(--background-end-rgb)); */
+  border-top: var(--border);
+}
+
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: var(--h1-size);
+}

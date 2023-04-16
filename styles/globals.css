@@ -1,0 +1,67 @@
+@import "./config/reset.css";
+@import "./components/mobile-wrapper.css";
+@import "./components/mobile-status-bar.css";
+@import "./components/mobile-body.css";
+@import "./components/mobile-nav.css";
+@import "./components/form.css";
+@import "./components/chat-list.css";
+@import "./screens/login.css";
+@import "./screens/friends.css";
+@import "./screens/chats.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --gap: 0.7rem;
+  --border: 1px solid rgb(var(--foreground-rgb));
+  --h1-size: 2rem;
+  --h2-size: 1.75rem;
+  --h3-size: 1.5rem;
+  --profile-image-width: 80px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 13, 50, 77;
+    --background-end-rgb: 53, 43, 48;
+    --border: 1px solid rgb(var(--foreground-rgb));
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-end-rgb));
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+a {
+  color: rgb(var(--foreground-rgb));
+  text-decoration: none;
+}

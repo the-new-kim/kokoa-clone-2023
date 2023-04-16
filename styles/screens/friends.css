@@ -1,0 +1,26 @@
+ul.friend-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+li.friend-list__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: var(--profile-image-width) 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+li.friend-list__item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -9px rgba(0, 0, 0, 0.75);
+}
+
+li.friend-list__item h3 {
+  margin-bottom: 0.25rem;
+}

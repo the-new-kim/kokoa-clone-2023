@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form > * {
+  margin-bottom: var(--gap);
+}
+
+form input {
+  background: transparent;
+  border: none;
+  padding: var(--gap);
+  border-bottom: var(--border);
+  color: rgb(var(--foreground-rgb));
+  outline: none;
+}
+
+form input:focus {
+  background: transparent;
+}
+
+form input[type="submit"] {
+  background-color: var(--);
+  border: var(--border);
+}

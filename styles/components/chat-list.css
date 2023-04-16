@@ -1,0 +1,29 @@
+/* .chat-list {
+
+} */
+
+ul.chat-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+li.chat-list__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.25fr 3fr 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+li.chat-list__item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+li.chat-list__item h3 {
+  margin-bottom: 0.25rem;
+}
